@@ -1,3 +1,3 @@
 ## Welcome
 
-This is just my CV/Resume. Feel free to browse through the rest of my repository.
+Building my CV/Resume using only HTML as a part of the roadmap for Frontend Developer.
