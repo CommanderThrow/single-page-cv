@@ -1,3 +1,3 @@
-## Reclaiming my Virginity
-Step 1 : What the effing is HTML?
+## Welcome
 
+This is just my CV/Resume. Feel free to browse through the rest of my repository.
