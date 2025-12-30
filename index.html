@@ -10,6 +10,8 @@
     <meta property="og:type" content="website, resume" />
     <meta property="og:url" content="" />
     <meta property="og:locale" content="en_SG" />
+    <!-- Add viewport meta tag for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
       body {
@@ -26,7 +28,7 @@
       }
 
       nav a {
-        margin: 0 15px;
+        margin: 0 10px; /* Reduced margin for mobile */
         text-decoration: none;
         color: #3498db;
         font-weight: bold;
@@ -40,6 +42,7 @@
         color: #2c3e50;
         border-bottom: 2px solid #3498db;
         padding-bottom: 10px;
+        font-size: 2em; /* Adjusted for better mobile scaling */
       }
 
       h2 {
@@ -54,7 +57,7 @@
       .skills-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 8px; /* Slightly smaller gap for mobile */
       }
 
       .skill-item {
@@ -71,6 +74,48 @@
 
       .contact-info a:hover {
         text-decoration: underline;
+      }
+
+      /* Responsive styles */
+      @media (max-width: 600px) {
+        body {
+          padding: 15px;
+        }
+
+        nav {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 5px;
+        }
+
+        nav a {
+          margin: 5px;
+          font-size: 0.9em;
+        }
+
+        h1 {
+          font-size: 1.5em;
+        }
+
+        .skills-list {
+          gap: 6px;
+        }
+
+        .skill-item {
+          font-size: 0.8em;
+        }
+      }
+
+      @media (max-width: 400px) {
+        nav a {
+          font-size: 0.8em;
+          margin: 3px;
+        }
+
+        h1 {
+          font-size: 1.3em;
+        }
       }
     </style>
   </head>
