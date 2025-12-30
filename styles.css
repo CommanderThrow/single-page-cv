@@ -220,7 +220,6 @@ footer {
   }
 }
 
-/* Print styles - minimum spacing between titles and content */
 @media print {
   body {
     padding: 12px;
@@ -236,19 +235,19 @@ footer {
 
   h1 {
     font-size: 18pt;
-    margin: 0 0 2pt 0; /* Minimum spacing */
+    margin: 0 0 2pt 0;
   }
 
   h2 {
     font-size: 14pt;
-    margin-top: 12pt; /* Minimum spacing */
-    margin-bottom: 2pt; /* Minimum spacing */
+    margin-top: 12pt;
+    margin-bottom: 2pt;
   }
 
   h3 {
     font-size: 12pt;
-    margin-top: 10pt; /* Minimum spacing */
-    margin-bottom: 1pt; /* Minimum spacing */
+    margin-top: 10pt;
+    margin-bottom: 1pt;
   }
 
   p,
@@ -258,18 +257,18 @@ footer {
   }
 
   .section-content {
-    padding: 4pt 0; /* Minimum spacing */
-    margin-bottom: 12pt; /* Slightly tighter spacing */
+    padding: 4pt 0;
+    margin-bottom: 12pt;
   }
 
   .skill-category {
-    margin-top: 6pt; /* Minimum spacing */
-    margin-bottom: 1pt; /* Minimum spacing */
+    margin-top: 6pt;
+    margin-bottom: 1pt;
   }
 
   .skills-list {
     gap: 8pt;
-    margin-top: 0pt; /* Minimum spacing */
+    margin-top: 0pt;
   }
 
   .skill-item {
@@ -279,8 +278,8 @@ footer {
 
   .experience-item,
   .project-item {
-    margin-bottom: 8pt; /* Minimum spacing */
-    padding-bottom: 4pt; /* Minimum spacing */
+    margin-bottom: 8pt;
+    padding-bottom: 4pt;
   }
 
   ul {
@@ -307,8 +306,8 @@ footer {
   }
 
   footer {
-    margin-top: 12pt; /* Minimum spacing */
-    padding-top: 4pt; /* Minimum spacing */
+    margin-top: 12pt;
+    padding-top: 4pt;
     font-size: 10pt;
   }
 }
