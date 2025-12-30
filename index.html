@@ -10,7 +10,6 @@
     <meta property="og:type" content="website, resume" />
     <meta property="og:url" content="" />
     <meta property="og:locale" content="en_SG" />
-    <!-- Add viewport meta tag for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
@@ -28,7 +27,7 @@
       }
 
       nav a {
-        margin: 0 10px; /* Reduced margin for mobile */
+        margin: 0 10px;
         text-decoration: none;
         color: #3498db;
         font-weight: bold;
@@ -42,7 +41,7 @@
         color: #2c3e50;
         border-bottom: 2px solid #3498db;
         padding-bottom: 10px;
-        font-size: 2em; /* Adjusted for better mobile scaling */
+        font-size: 2em;
       }
 
       h2 {
@@ -57,7 +56,7 @@
       .skills-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 8px; /* Slightly smaller gap for mobile */
+        gap: 8px;
       }
 
       .skill-item {
@@ -115,6 +114,68 @@
 
         h1 {
           font-size: 1.3em;
+        }
+      }
+
+      /* Print styles */
+      @media print {
+        body {
+          padding: 10px;
+          font-size: 12pt;
+          line-height: 1.4;
+          max-width: none;
+        }
+
+        nav {
+          display: none; /* Hide navigation in print */
+        }
+
+        h1 {
+          font-size: 18pt;
+          border-bottom: 2pt solid #3498db;
+        }
+
+        h2 {
+          font-size: 14pt;
+          margin-top: 20px;
+        }
+
+        h3 {
+          font-size: 12pt;
+          margin-top: 10px;
+        }
+
+        .skills-list {
+          display: block; /* Change flex layout to block for print */
+        }
+
+        .skill-item {
+          display: inline-block;
+          margin-right: 5px;
+          margin-bottom: 5px;
+          background-color: #f0f0f0; /* Better print contrast */
+          border: 1px solid #ccc;
+        }
+
+        a {
+          color: #000; /* Print links in black */
+          text-decoration: underline;
+        }
+
+        a[href]:after {
+          content: " (" attr(href) ")"; /* Show URLs for links in print */
+          font-size: 0.8em;
+          color: #555;
+        }
+
+        /* Ensure proper page breaks */
+        section {
+          page-break-inside: avoid;
+        }
+
+        footer {
+          margin-top: 20px;
+          font-size: 10pt;
         }
       }
     </style>
