@@ -20,6 +20,22 @@
         line-height: 1.6;
       }
 
+      nav {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #3498db;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
       h1 {
         color: #2c3e50;
         border-bottom: 2px solid #3498db;
@@ -35,6 +51,19 @@
         margin: 10px 0;
       }
 
+      .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .skill-item {
+        background-color: #e0f7fa;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 0.9em;
+      }
+
       .contact-info a {
         color: #3498db;
         text-decoration: none;
@@ -47,21 +76,46 @@
   </head>
 
   <body>
-    <section>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <header id="about">
       <h1>Aaron Ryan Shamika</h1>
       <h2>Junior Software Engineer</h2>
-      <p>No.55, Lorong 1, Green Acres Estate,</p>
-      <p>Jalan Matang Batu Kawa, Kuching, 93250, Sarawak</p>
-    </section>
+      <p>
+        Passionate software engineer with experience in backend development and
+        machine learning. Eager to contribute to innovative projects while
+        expanding my frontend development skills.
+      </p>
+    </header>
 
     <main>
-      <section class="skills">
-        <h2>Skills</h2>
-        <p>HTML, CSS, Javascript, Typescript, C#</p>
+      <section class="skills" id="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <div class="skills-list">
+          <span class="skill-item">HTML</span>
+          <span class="skill-item">CSS</span>
+          <span class="skill-item">JavaScript</span>
+          <span class="skill-item">TypeScript</span>
+          <span class="skill-item">C#</span>
+          <span class="skill-item">NodeJS</span>
+          <span class="skill-item">AdonisJS</span>
+          <span class="skill-item">Unity</span>
+          <span class="skill-item">Machine Learning</span>
+        </div>
       </section>
 
-      <section class="education">
-        <h2>Education</h2>
+      <section
+        class="education"
+        id="education"
+        aria-labelledby="education-heading"
+      >
+        <h2 id="education-heading">Education</h2>
         <p>
           Bachelor in Computer Science (Computer Graphic & Multimedia Software)
           - September 2019 to September 2023
@@ -75,9 +129,14 @@
         </ul>
       </section>
 
-      <section class="experience">
-        <h2>Experiences</h2>
-        <p>Impact Business Solution to December 2023 - November 2024</p>
+      <section
+        class="experience"
+        id="experience"
+        aria-labelledby="experience-heading"
+      >
+        <h2 id="experience-heading">Experiences</h2>
+        <h3>Junior Software Engineer - Impact Business Solution</h3>
+        <p>December 2023 - November 2024</p>
         <ul>
           <li>
             Developed the backend for HR management web application using
@@ -87,23 +146,41 @@
         </ul>
       </section>
 
-      <section class="call-to-action">
-        <h2>Contact</h2>
-        <p>Email: aaronryan0505.ar@gmail.com</p>
-        <p>Phone No: 010-9290630</p>
+      <section
+        class="call-to-action"
+        id="contact"
+        aria-labelledby="contact-heading"
+      >
+        <h2 id="contact-heading">Contact</h2>
+        <p>
+          <strong>Address:</strong> No.55, Lorong 1, Green Acres Estate, Jalan
+          Matang Batu Kawa, Kuching, 93250, Sarawak
+        </p>
+        <p>
+          Email:
+          <a href="mailto:aaronryan0505.ar@gmail.com"
+            >aaronryan0505.ar@gmail.com</a
+          >
+        </p>
+        <p>Phone No: <a href="tel:+60109290630">010-9290630</a></p>
         <p>
           Github:
           <a href="https://github.com/CommanderThrow" target="_blank"
-            >https://github.com/CommanderThrow</a
+            >CommanderThrow</a
           >
         </p>
       </section>
 
-      <section class="reference">
-        <h2>Reference</h2>
-        <p>Name: Mohamad Zulhaimie Bin Bujang</p>
-        <p>Phone: 014-598 7839</p>
-        <p>Email: admin@zulhaimiebujang.com</p>
+      <section class="reference" aria-labelledby="references-heading">
+        <h2 id="references-heading">References</h2>
+        <h3>Mohamad Zulhaimie Bin Bujang</h3>
+        <p>Phone: <a href="tel:+60145987839">014-598 7839</a></p>
+        <p>
+          Email:
+          <a href="mailto:admin@zulhaimiebujang.com"
+            >admin@zulhaimiebujang.com</a
+          >
+        </p>
       </section>
     </main>
 
