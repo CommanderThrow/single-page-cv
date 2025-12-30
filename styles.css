@@ -1,0 +1,243 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #1abc9c;
+  --light-bg: #f8f9fa;
+  --border-color: #e0e0e0;
+  --text-dark: #333;
+  --text-light: #666;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+nav {
+  margin-bottom: 30px;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+nav a {
+  margin: 0 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--light-bg);
+  text-decoration: none;
+}
+
+h1 {
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  font-size: 2.5em;
+  margin-top: 0;
+}
+
+h2 {
+  color: var(--primary-color);
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--border-color);
+  font-size: 1.6em;
+}
+
+h3 {
+  color: var(--secondary-color);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+p,
+li {
+  color: var(--text-light);
+}
+
+.section-content {
+  background-color: var(--light-bg);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid var(--secondary-color);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skill-item {
+  background-color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.skill-category {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.contact-info a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.experience-item,
+.project-item {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.experience-item:last-child,
+.project-item:last-child {
+  border-bottom: none;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  nav a {
+    margin: 5px;
+    font-size: 0.9em;
+    padding: 4px 8px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .skills-list {
+    gap: 8px;
+  }
+
+  .skill-item {
+    font-size: 0.8em;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  nav a {
+    font-size: 0.8em;
+    margin: 3px;
+    padding: 3px 6px;
+  }
+
+  h1 {
+    font-size: 1.7em;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    padding: 10px;
+    font-size: 11pt;
+    line-height: 1.4;
+    max-width: none;
+    box-shadow: none;
+    margin: 0;
+  }
+
+  nav {
+    display: none;
+  }
+
+  h1 {
+    font-size: 18pt;
+    border-bottom: 3pt solid var(--primary-color);
+  }
+
+  h2 {
+    font-size: 14pt;
+    margin-top: 20px;
+    border-bottom: 2pt solid var(--border-color);
+  }
+
+  h3 {
+    font-size: 12pt;
+    margin-top: 10px;
+  }
+
+  .skills-list {
+    display: block;
+  }
+
+  .skill-item {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+
+  .section-content {
+    background-color: #fff;
+    border-left: none;
+    padding: 10px 0;
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #555;
+  }
+
+  section {
+    page-break-inside: avoid;
+  }
+
+  footer {
+    margin-top: 20px;
+    font-size: 10pt;
+  }
+}

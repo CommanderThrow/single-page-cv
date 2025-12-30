@@ -11,178 +11,7 @@
     <meta property="og:url" content="" />
     <meta property="og:locale" content="en_SG" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        line-height: 1.6;
-      }
-
-      nav {
-        margin-bottom: 30px;
-        text-align: center;
-      }
-
-      nav a {
-        margin: 0 10px;
-        text-decoration: none;
-        color: #3498db;
-        font-weight: bold;
-      }
-
-      nav a:hover {
-        text-decoration: underline;
-      }
-
-      h1 {
-        color: #2c3e50;
-        border-bottom: 2px solid #3498db;
-        padding-bottom: 10px;
-        font-size: 2em;
-      }
-
-      h2 {
-        color: #34495e;
-        margin-top: 25px;
-      }
-
-      h3 {
-        color: #555;
-        margin-top: 15px;
-      }
-
-      ul {
-        margin: 10px 0;
-      }
-
-      .skills-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-      }
-
-      .skill-item {
-        background-color: #e0f7fa;
-        padding: 5px 10px;
-        border-radius: 4px;
-        font-size: 0.9em;
-      }
-
-      .contact-info a {
-        color: #3498db;
-        text-decoration: none;
-      }
-
-      .contact-info a:hover {
-        text-decoration: underline;
-      }
-
-      /* Responsive styles */
-      @media (max-width: 600px) {
-        body {
-          padding: 15px;
-        }
-
-        nav {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 5px;
-        }
-
-        nav a {
-          margin: 5px;
-          font-size: 0.9em;
-        }
-
-        h1 {
-          font-size: 1.5em;
-        }
-
-        .skills-list {
-          gap: 6px;
-        }
-
-        .skill-item {
-          font-size: 0.8em;
-        }
-      }
-
-      @media (max-width: 400px) {
-        nav a {
-          font-size: 0.8em;
-          margin: 3px;
-        }
-
-        h1 {
-          font-size: 1.3em;
-        }
-      }
-
-      /* Print styles */
-      @media print {
-        body {
-          padding: 10px;
-          font-size: 12pt;
-          line-height: 1.4;
-          max-width: none;
-        }
-
-        nav {
-          display: none;
-        }
-
-        h1 {
-          font-size: 18pt;
-          border-bottom: 2pt solid #3498db;
-        }
-
-        h2 {
-          font-size: 14pt;
-          margin-top: 20px;
-        }
-
-        h3 {
-          font-size: 12pt;
-          margin-top: 10px;
-        }
-
-        .skills-list {
-          display: block;
-        }
-
-        .skill-item {
-          display: inline-block;
-          margin-right: 5px;
-          margin-bottom: 5px;
-          background-color: #f0f0f0;
-          border: 1px solid #ccc;
-        }
-
-        a {
-          color: #000;
-          text-decoration: underline;
-        }
-
-        a[href]:after {
-          content: " (" attr(href) ")";
-          font-size: 0.8em;
-          color: #555;
-        }
-
-        section {
-          page-break-inside: avoid;
-        }
-
-        footer {
-          margin-top: 20px;
-          font-size: 10pt;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
@@ -198,38 +27,41 @@
     <header id="about">
       <h1>Aaron Ryan Shamika</h1>
       <h2>Junior Software Engineer</h2>
-      <p>
-        Passionate software engineer with experience in backend development and
-        machine learning. Eager to contribute to innovative projects while
-        expanding my frontend development skills.
-      </p>
+      <div class="section-content">
+        <p>
+          Passionate software engineer with experience in backend development
+          and machine learning. Eager to contribute to innovative projects while
+          expanding my frontend development skills.
+        </p>
+      </div>
     </header>
 
     <main>
       <section class="skills" id="skills" aria-labelledby="skills-heading">
         <h2 id="skills-heading">Skills</h2>
+        <div class="section-content">
+          <div class="skill-category">Frontend</div>
+          <div class="skills-list">
+            <span class="skill-item">HTML</span>
+            <span class="skill-item">CSS</span>
+            <span class="skill-item">JavaScript</span>
+            <span class="skill-item">TypeScript</span>
+          </div>
 
-        <h3>Frontend</h3>
-        <div class="skills-list">
-          <span class="skill-item">HTML</span>
-          <span class="skill-item">CSS</span>
-          <span class="skill-item">JavaScript</span>
-          <span class="skill-item">TypeScript</span>
-        </div>
+          <div class="skill-category">Backend</div>
+          <div class="skills-list">
+            <span class="skill-item">NodeJS</span>
+            <span class="skill-item">TypeScript</span>
+            <span class="skill-item">C#</span>
+            <span class="skill-item">AdonisJS</span>
+          </div>
 
-        <h3>Backend</h3>
-        <div class="skills-list">
-          <span class="skill-item">NodeJS</span>
-          <span class="skill-item">TypeScript</span>
-          <span class="skill-item">C#</span>
-          <span class="skill-item">AdonisJS</span>
-        </div>
-
-        <h3>Tools & Technologies</h3>
-        <div class="skills-list">
-          <span class="skill-item">Unity</span>
-          <span class="skill-item">Machine Learning</span>
-          <span class="skill-item">Selenium IDE</span>
+          <div class="skill-category">Tools & Technologies</div>
+          <div class="skills-list">
+            <span class="skill-item">Unity</span>
+            <span class="skill-item">Machine Learning</span>
+            <span class="skill-item">Selenium IDE</span>
+          </div>
         </div>
       </section>
 
@@ -239,22 +71,27 @@
         aria-labelledby="education-heading"
       >
         <h2 id="education-heading">Education</h2>
-        <p>
-          Bachelor in Computer Science (Computer Graphic & Multimedia Software)
-          - September 2019 to September 2023
-        </p>
-        <ul>
-          <li>
-            Developed an application that can detect road cracks and pothole
-            with 70-90% accuracy using Deep Convolutional Neural Network(DCNN)
-            machine learning, helping civil engineers save time by sending out
-            drones to check roads
-          </li>
-          <li>
-            Developed a soccer game with horror theme, leading a team and
-            assigning tasks based on individual strengths
-          </li>
-        </ul>
+        <div class="section-content">
+          <h3>
+            Bachelor in Computer Science (Computer Graphic & Multimedia
+            Software)
+          </h3>
+          <p><strong>University:</strong> Universiti Teknologi Malaysia</p>
+          <p><strong>Duration:</strong> September 2019 to September 2023</p>
+          <p><strong>GPA:</strong> 3.32</p>
+          <ul>
+            <li>
+              Developed an application that can detect road cracks and pothole
+              with 70-90% accuracy using Deep Convolutional Neural Network(DCNN)
+              machine learning, helping civil engineers save time by sending out
+              drones to check roads
+            </li>
+            <li>
+              Developed a soccer game with horror theme, leading a team and
+              assigning tasks based on individual strengths
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section
@@ -263,49 +100,67 @@
         aria-labelledby="experience-heading"
       >
         <h2 id="experience-heading">Experiences</h2>
-        <h3>Junior Software Engineer - Impact Business Solution</h3>
-        <p>December 2023 - November 2024</p>
-        <ul>
-          <li>
-            Developed the backend for HR management web application serving 500+
-            employees using NodeJS, Typescript with AdonisJS framework
-          </li>
-          <li>
-            Automated 20+ functionality tests using Selenium IDE to determine
-            application speed, resulting in significant time savings
-          </li>
-          <li>
-            Introduced AdonisJS built-in functions to the team, establishing
-            code quality standards and improving development consistency
-          </li>
-        </ul>
+        <div class="section-content">
+          <div class="experience-item">
+            <h3>Junior Software Engineer - Impact Business Solution</h3>
+            <p><strong>Duration:</strong> December 2023 - November 2024</p>
+            <ul>
+              <li>
+                Developed the backend for HR management web application serving
+                500+ employees using NodeJS, Typescript with AdonisJS framework
+              </li>
+              <li>
+                Automated 20+ functionality tests using Selenium IDE to
+                determine application speed, resulting in significant time
+                savings
+              </li>
+              <li>
+                Introduced AdonisJS built-in functions to the team, establishing
+                code quality standards and improving development consistency
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section id="projects" aria-labelledby="projects-heading">
         <h2 id="projects-heading">Projects</h2>
-        <h3>Road Crack Detection System</h3>
-        <p>Machine Learning Application with 70-90% accuracy using DCNN</p>
-        <ul>
-          <li>
-            Helped civil engineers save time by enabling drone-based road
-            inspections
-          </li>
-          <li>
-            Processed road images to detect cracks and potholes automatically
-          </li>
-        </ul>
+        <div class="section-content">
+          <div class="project-item">
+            <h3>Road Crack Detection System</h3>
+            <p><strong>Technology:</strong> Machine Learning, DCNN</p>
+            <ul>
+              <li>
+                Developed application with 70-90% accuracy for detecting road
+                cracks and potholes
+              </li>
+              <li>
+                Helped civil engineers save time by enabling drone-based road
+                inspections
+              </li>
+              <li>
+                Processed road images to detect cracks and potholes
+                automatically
+              </li>
+            </ul>
+          </div>
 
-        <h3>Horror Soccer Game</h3>
-        <p>Unity Game Development Project</p>
-        <ul>
-          <li>
-            Implemented proper physics for ball movement and player interactions
-          </li>
-          <li>Added basic animation systems</li>
-          <li>
-            Led a team project, assigning tasks based on individual strengths
-          </li>
-        </ul>
+          <div class="project-item">
+            <h3>Horror Soccer Game</h3>
+            <p><strong>Technology:</strong> Unity</p>
+            <ul>
+              <li>
+                Implemented proper physics for ball movement and player
+                interactions
+              </li>
+              <li>Added basic animation systems</li>
+              <li>
+                Led a team project, assigning tasks based on individual
+                strengths
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section
@@ -314,35 +169,44 @@
         aria-labelledby="contact-heading"
       >
         <h2 id="contact-heading">Contact</h2>
-        <p>
-          <strong>Address:</strong> No.55, Lorong 1, Green Acres Estate, Jalan
-          Matang Batu Kawa, Kuching, 93250, Sarawak
-        </p>
-        <p>
-          Email:
-          <a href="mailto:aaronryan0505.ar@gmail.com"
-            >aaronryan0505.ar@gmail.com</a
-          >
-        </p>
-        <p>Phone No: <a href="tel:+60109290630">010-9290630</a></p>
-        <p>
-          Github:
-          <a href="https://github.com/CommanderThrow" target="_blank"
-            >CommanderThrow</a
-          >
-        </p>
+        <div class="section-content">
+          <p>
+            <strong>Address:</strong> No.55, Lorong 1, Green Acres Estate, Jalan
+            Matang Batu Kawa, Kuching, 93250, Sarawak
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:aaronryan0505.ar@gmail.com"
+              >aaronryan0505.ar@gmail.com</a
+            >
+          </p>
+          <p>
+            <strong>Phone:</strong> <a href="tel:+60109290630">010-9290630</a>
+          </p>
+          <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/CommanderThrow" target="_blank"
+              >CommanderThrow</a
+            >
+          </p>
+        </div>
       </section>
 
       <section class="reference" aria-labelledby="references-heading">
         <h2 id="references-heading">References</h2>
-        <h3>Mohamad Zulhaimie Bin Bujang</h3>
-        <p>Phone: <a href="tel:+60145987839">014-598 7839</a></p>
-        <p>
-          Email:
-          <a href="mailto:admin@zulhaimiebujang.com"
-            >admin@zulhaimiebujang.com</a
-          >
-        </p>
+        <div class="section-content">
+          <h3>Mohamad Zulhaimie Bin Bujang</h3>
+          <p><strong>Position:</strong> Software Developer</p>
+          <p>
+            <strong>Phone:</strong> <a href="tel:+60145987839">014-598 7839</a>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:admin@zulhaimiebujang.com"
+              >admin@zulhaimiebujang.com</a
+            >
+          </p>
+        </div>
       </section>
     </main>
 
