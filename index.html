@@ -49,6 +49,11 @@
         margin-top: 25px;
       }
 
+      h3 {
+        color: #555;
+        margin-top: 15px;
+      }
+
       ul {
         margin: 10px 0;
       }
@@ -127,7 +132,7 @@
         }
 
         nav {
-          display: none; /* Hide navigation in print */
+          display: none;
         }
 
         h1 {
@@ -146,29 +151,28 @@
         }
 
         .skills-list {
-          display: block; /* Change flex layout to block for print */
+          display: block;
         }
 
         .skill-item {
           display: inline-block;
           margin-right: 5px;
           margin-bottom: 5px;
-          background-color: #f0f0f0; /* Better print contrast */
+          background-color: #f0f0f0;
           border: 1px solid #ccc;
         }
 
         a {
-          color: #000; /* Print links in black */
+          color: #000;
           text-decoration: underline;
         }
 
         a[href]:after {
-          content: " (" attr(href) ")"; /* Show URLs for links in print */
+          content: " (" attr(href) ")";
           font-size: 0.8em;
           color: #555;
         }
 
-        /* Ensure proper page breaks */
         section {
           page-break-inside: avoid;
         }
@@ -187,6 +191,7 @@
       <a href="#skills">Skills</a>
       <a href="#education">Education</a>
       <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
 
@@ -203,16 +208,28 @@
     <main>
       <section class="skills" id="skills" aria-labelledby="skills-heading">
         <h2 id="skills-heading">Skills</h2>
+
+        <h3>Frontend</h3>
         <div class="skills-list">
           <span class="skill-item">HTML</span>
           <span class="skill-item">CSS</span>
           <span class="skill-item">JavaScript</span>
           <span class="skill-item">TypeScript</span>
-          <span class="skill-item">C#</span>
+        </div>
+
+        <h3>Backend</h3>
+        <div class="skills-list">
           <span class="skill-item">NodeJS</span>
+          <span class="skill-item">TypeScript</span>
+          <span class="skill-item">C#</span>
           <span class="skill-item">AdonisJS</span>
+        </div>
+
+        <h3>Tools & Technologies</h3>
+        <div class="skills-list">
           <span class="skill-item">Unity</span>
           <span class="skill-item">Machine Learning</span>
+          <span class="skill-item">Selenium IDE</span>
         </div>
       </section>
 
@@ -229,9 +246,14 @@
         <ul>
           <li>
             Developed an application that can detect road cracks and pothole
-            using Deep Convolutional Neural Network(DCNN) machine learning
+            with 70-90% accuracy using Deep Convolutional Neural Network(DCNN)
+            machine learning, helping civil engineers save time by sending out
+            drones to check roads
           </li>
-          <li>Developed a Flappy Bird clone game using Unity</li>
+          <li>
+            Developed a soccer game with horror theme, leading a team and
+            assigning tasks based on individual strengths
+          </li>
         </ul>
       </section>
 
@@ -245,10 +267,44 @@
         <p>December 2023 - November 2024</p>
         <ul>
           <li>
-            Developed the backend for HR management web application using
-            NodeJS, Typescript with AdonisJS framework
+            Developed the backend for HR management web application serving 500+
+            employees using NodeJS, Typescript with AdonisJS framework
           </li>
-          <li>Helped to automate testing using Selenium IDE</li>
+          <li>
+            Automated 20+ functionality tests using Selenium IDE to determine
+            application speed, resulting in significant time savings
+          </li>
+          <li>
+            Introduced AdonisJS built-in functions to the team, establishing
+            code quality standards and improving development consistency
+          </li>
+        </ul>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <h3>Road Crack Detection System</h3>
+        <p>Machine Learning Application with 70-90% accuracy using DCNN</p>
+        <ul>
+          <li>
+            Helped civil engineers save time by enabling drone-based road
+            inspections
+          </li>
+          <li>
+            Processed road images to detect cracks and potholes automatically
+          </li>
+        </ul>
+
+        <h3>Horror Soccer Game</h3>
+        <p>Unity Game Development Project</p>
+        <ul>
+          <li>
+            Implemented proper physics for ball movement and player interactions
+          </li>
+          <li>Added basic animation systems</li>
+          <li>
+            Led a team project, assigning tasks based on individual strengths
+          </li>
         </ul>
       </section>
 
