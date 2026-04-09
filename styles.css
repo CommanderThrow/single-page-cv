@@ -222,9 +222,9 @@ footer {
 
 @media print {
   body {
-    padding: 12px;
-    font-size: 11pt;
-    line-height: 1.4;
+    padding: 0.25cm;
+    font-size: 8pt;
+    line-height: 1.15;
     max-width: none;
     margin: 0;
   }
@@ -234,71 +234,79 @@ footer {
   }
 
   h1 {
-    font-size: 18pt;
-    margin: 0 0 2pt 0;
+    font-size: 14pt;
+    margin: 0 0 1pt 0;
   }
 
   h2 {
-    font-size: 14pt;
-    margin-top: 12pt;
-    margin-bottom: 2pt;
+    font-size: 9pt;
+    margin-top: 4pt;
+    margin-bottom: 0pt;
+  }
+
+  h2:after {
+    height: 0.3pt;
+    width: 15px;
+    bottom: -2px;
   }
 
   h3 {
-    font-size: 12pt;
-    margin-top: 10pt;
-    margin-bottom: 1pt;
+    font-size: 8.5pt;
+    margin-top: 2pt;
+    margin-bottom: 0pt;
   }
 
   p,
   li {
-    margin-bottom: 6pt;
-    font-size: 11pt;
+    margin-bottom: 0pt;
+    font-size: 8pt;
   }
 
   .section-content {
-    padding: 4pt 0;
-    margin-bottom: 12pt;
+    padding: 0pt 0;
+    margin-bottom: 1pt;
+    border-bottom-width: 0.2pt;
   }
 
   .skill-category {
-    margin-top: 6pt;
-    margin-bottom: 1pt;
+    margin-top: 1pt;
+    margin-bottom: 0pt;
+    font-size: 8pt;
   }
 
   .skills-list {
-    gap: 8pt;
+    gap: 2pt;
     margin-top: 0pt;
   }
 
   .skill-item {
-    padding: 4pt 10pt;
-    font-size: 9.5pt;
+    padding: 1pt 4pt;
+    font-size: 7pt;
   }
 
   .experience-item,
   .project-item {
-    margin-bottom: 8pt;
-    padding-bottom: 4pt;
+    margin-bottom: 2pt;
+    padding-bottom: 0pt;
   }
 
   ul {
-    padding-left: 18pt;
+    padding-left: 10pt;
+    margin: 0pt 0;
   }
 
   li {
-    margin-bottom: 4pt;
+    margin-bottom: 0pt;
   }
 
   a {
     color: #000;
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 0.3pt dotted #999;
   }
 
-  a[href]:after {
-    content: " (" attr(href) ")";
-    font-size: 0.75em;
-    color: #555;
+  a[href^="http"]:after {
+    content: none;
   }
 
   section {
@@ -306,8 +314,8 @@ footer {
   }
 
   footer {
-    margin-top: 12pt;
-    padding-top: 4pt;
-    font-size: 10pt;
+    margin-top: 2pt;
+    padding-top: 1pt;
+    font-size: 6.5pt;
   }
 }
