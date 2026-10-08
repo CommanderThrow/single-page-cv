@@ -1,0 +1,12 @@
+{
+  "name": "single-page-cv",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node --watch-path=src --watch-path=resume.json build.mjs"
+  }
+}
