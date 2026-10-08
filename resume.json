@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "siteUrl": "https://commanderthrow.github.io/single-page-cv/",
+    "locale": "en_SG",
+    "description": "Aaron Ryan Shamika - software engineer with backend experience in Node.js, TypeScript, C#/.NET and SQL Server.",
+    "keywords": ["Aaron Ryan", "CV", "Resume", "Software Engineer"]
+  },
+  "basics": {
+    "name": "Aaron Ryan Shamika",
+    "title": "Software Engineer (Node.js / TypeScript)",
+    "summary": "Software engineer with backend experience in Node.js and TypeScript, including an HR management web app serving 500+ employees, plus C#/.NET and SQL Server work supporting around 600 users. Looking to grow as a full-stack JavaScript engineer on the MERN stack. I enjoy learning new technologies, tackling challenges under pressure, and contributing through adaptability and teamwork.",
+    "location": "Kuching, Sarawak",
+    "email": "aaronryan0505.ar@gmail.com",
+    "phone": "+60 10-929 0630",
+    "links": [
+      { "label": "github.com/CommanderThrow", "url": "https://github.com/CommanderThrow" }
+    ]
+  },
+  "experience": [
+    {
+      "role": "IT Application Support",
+      "company": "Ausource Construction Management PLT (ACM)",
+      "start": "February 2026",
+      "end": "Present",
+      "highlights": [
+        "Managed and supported ClickHome and Databuild, third-party Australian construction management applications, for around 600 users, troubleshooting 10-20 support tickets per day.",
+        "Wrote custom SQL Server stored procedures and functions to maintain the applications and automate workflows based on user requests.",
+        "Automated document uploads with a stored procedure that runs overnight via Groveller, loading files from the server into ClickHome by job number and sparing users the manual upload process.",
+        "Built reports with Crystal Reports and SSRS tailored to users' data needs."
+      ]
+    },
+    {
+      "role": "Software Programmer",
+      "company": "AccountSoft Sdn Bhd",
+      "start": "September 2025",
+      "end": "February 2026",
+      "highlights": [
+        "Developed 3 custom plug-ins for AutoCount using C# with .NET framework and AutoCount API. Fixed and updated legacy projects.",
+        "Mentored 2 interns on AutoCount API and .NET framework, onboarding them to the code repository and how it is managed."
+      ]
+    },
+    {
+      "role": "Junior Software Engineer",
+      "company": "Impact Business Solution",
+      "start": "December 2023",
+      "end": "November 2024",
+      "highlights": [
+        "Developed backend for HR management web app serving 500+ employees using NodeJS, TypeScript with AdonisJS",
+        "Automated 20+ functionality tests using Selenium IDE, saving significant time",
+        "Introduced AdonisJS built-in functions, establishing code quality standards and consistency",
+        "Used conventional commits for clear Git history"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": ["HTML", "CSS", "JavaScript", "TypeScript", "PHP"]
+    },
+    {
+      "category": "Backend",
+      "items": ["NodeJS", "TypeScript", "C#", "AdonisJS", ".NET Framework", "SQL Server"]
+    },
+    {
+      "category": "Tools & Technologies",
+      "items": ["Unity", "Machine Learning", "Selenium IDE", "Crystal Reports", "SSRS"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Cardfight!! Vanguard Simulator",
+      "tag": "Passion project",
+      "tech": ["TypeScript", "React", "Vite", "Vitest"],
+      "highlights": [
+        "Building a fan-made, fully automated browser version of the card game, with a rules engine that resolves every phase, check, trigger and guard",
+        "Implemented abilities for 1,254 cards through an ability interpreter with one handler per condition, timing, cost and effect, so a new mechanic is a new entry",
+        "Added a rule-based AI opponent, a deck builder and a scraper that generates the card data, structured as an npm workspaces monorepo with a Vitest test suite"
+      ]
+    },
+    {
+      "name": "Road Crack Detection System",
+      "tech": ["Machine Learning", "DCNN"],
+      "highlights": [
+        "Developed an application that detects road cracks and potholes with 70-90% accuracy using a Deep Convolutional Neural Network (DCNN)",
+        "Enabled drone-based road inspections, saving civil engineers time checking roads"
+      ]
+    },
+    {
+      "name": "Horror Soccer Game",
+      "tech": ["Unity"],
+      "highlights": [
+        "Implemented physics for ball movement and player interactions",
+        "Added basic animation systems",
+        "Led team project, assigning tasks by individual strengths"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor in Computer Science (Computer Graphic & Multimedia Software)",
+      "school": "Universiti Teknologi Malaysia",
+      "start": "September 2019",
+      "end": "September 2023",
+      "gpa": "3.32"
+    }
+  ],
+  "references": "Available on request"
+}
