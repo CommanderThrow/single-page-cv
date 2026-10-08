@@ -20,10 +20,10 @@ const section = (id, heading, body) => `
         ${body}
       </section>`;
 
-const entry = ({ title, org, tag, dates, meta, highlights }) => `
+const entry = ({ title, tag, dates, meta, highlights }) => `
         <article class="entry">
           <div class="entry-head">
-            <h3>${esc(title)}${org ? ` <span class="org">${esc(org)}</span>` : ""}${tag ? ` <span class="tag">${esc(tag)}</span>` : ""}</h3>
+            <h3>${esc(title)}${tag ? ` <span class="tag">${esc(tag)}</span>` : ""}</h3>
             ${dates ? `<p class="dates">${esc(dates)}</p>` : ""}
           </div>
           ${meta ? `<p class="entry-meta">${esc(meta)}</p>` : ""}
@@ -62,8 +62,8 @@ const renderExperience = (experience) =>
           .map((job) =>
             entry({
               title: job.role,
-              org: job.company,
               dates: dateRange(job),
+              meta: [job.company, job.location].filter(Boolean).join(" · "),
               highlights: job.highlights,
             }),
           )
@@ -116,7 +116,7 @@ const renderEducation = (education) =>
             entry({
               title: school.degree,
               dates: dateRange(school),
-              meta: [school.school, school.gpa && `GPA ${school.gpa}`]
+              meta: [school.school, school.location, school.grade]
                 .filter(Boolean)
                 .join(" · "),
               highlights: school.highlights,

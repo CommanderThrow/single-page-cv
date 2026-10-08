@@ -1,15 +1,15 @@
 {
   "meta": {
     "siteUrl": "https://commanderthrow.github.io/single-page-cv/",
-    "locale": "en_SG",
+    "locale": "en_MY",
     "description": "Aaron Ryan Shamika - software engineer with backend experience in Node.js, TypeScript, C#/.NET and SQL Server.",
     "keywords": ["Aaron Ryan", "CV", "Resume", "Software Engineer"]
   },
   "basics": {
     "name": "Aaron Ryan Shamika",
     "title": "Software Engineer (Node.js / TypeScript)",
-    "summary": "Software engineer with backend experience in Node.js and TypeScript, including an HR management web app serving 500+ employees, plus C#/.NET and SQL Server work supporting around 600 users. Looking to grow as a full-stack JavaScript engineer on the MERN stack. I enjoy learning new technologies, tackling challenges under pressure, and contributing through adaptability and teamwork.",
-    "location": "Kuching, Sarawak",
+    "summary": "Software engineer with backend experience in Node.js and TypeScript, including an HR management web app serving 500+ employees, plus C#/.NET and SQL Server work supporting around 600 users. Building a TypeScript and React card-game simulator with a rules engine covering 1,254 cards. Looking for a full-stack JavaScript/TypeScript role.",
+    "location": "Kuching, Sarawak, Malaysia",
     "email": "aaronryan0505.ar@gmail.com",
     "phone": "+60 10-929 0630",
     "links": [
@@ -20,56 +20,73 @@
     {
       "role": "IT Application Support",
       "company": "Ausource Construction Management PLT (ACM)",
+      "location": "Kuching, Malaysia",
       "start": "February 2026",
       "end": "Present",
       "highlights": [
-        "Managed and supported ClickHome and Databuild, third-party Australian construction management applications, for around 600 users, troubleshooting 10-20 support tickets per day.",
-        "Wrote custom SQL Server stored procedures and functions to maintain the applications and automate workflows based on user requests.",
-        "Automated document uploads with a stored procedure that runs overnight via Groveller, loading files from the server into ClickHome by job number and sparing users the manual upload process.",
-        "Built reports with Crystal Reports and SSRS tailored to users' data needs."
+        "Automated document uploads with an overnight SQL Server stored procedure run via Groveller, loading files into ClickHome by job number and removing the manual upload step",
+        "Supported around 600 users of ClickHome and Databuild, third-party Australian construction management applications, resolving 10-20 tickets per day, often over calls to pin down the real problem and explain the fix in plain terms",
+        "Gathered users' requirements and translated them into business logic, implemented as SQL Server stored procedures and functions that maintain the applications and automate workflows",
+        "Built Crystal Reports and SSRS reports to users' data requirements"
       ]
     },
     {
       "role": "Software Programmer",
       "company": "AccountSoft Sdn Bhd",
+      "location": "Kuching, Malaysia",
       "start": "September 2025",
       "end": "February 2026",
       "highlights": [
-        "Developed 3 custom plug-ins for AutoCount using C# with .NET framework and AutoCount API. Fixed and updated legacy projects.",
-        "Mentored 2 interns on AutoCount API and .NET framework, onboarding them to the code repository and how it is managed."
+        "Developed 3 custom AutoCount plug-ins in C# on the .NET Framework using the AutoCount API",
+        "Maintained and updated legacy plug-in projects",
+        "Mentored 2 interns on the AutoCount API and .NET Framework and onboarded them to the team's repository workflow"
+      ]
+    },
+    {
+      "role": "Part-time work (hospitality)",
+      "company": "Various employers",
+      "location": "Kuching, Malaysia",
+      "start": "December 2024",
+      "end": "August 2025",
+      "highlights": [
+        "Customer-facing service roles, including at a Japanese restaurant; studied Japanese alongside"
       ]
     },
     {
       "role": "Junior Software Engineer",
       "company": "Impact Business Solution",
+      "location": "Kuching, Malaysia",
       "start": "December 2023",
       "end": "November 2024",
       "highlights": [
-        "Developed backend for HR management web app serving 500+ employees using NodeJS, TypeScript with AdonisJS",
-        "Automated 20+ functionality tests using Selenium IDE, saving significant time",
-        "Introduced AdonisJS built-in functions, establishing code quality standards and consistency",
-        "Used conventional commits for clear Git history"
+        "Built the backend for an HR management web app serving 500+ employees with Node.js, TypeScript and AdonisJS",
+        "Automated 20+ functional tests with Selenium IDE, replacing manual regression checks",
+        "Introduced AdonisJS built-in features in place of custom code, setting a consistent standard across the codebase"
       ]
     }
   ],
   "skills": [
     {
-      "category": "Frontend",
-      "items": ["HTML", "CSS", "JavaScript", "TypeScript", "PHP"]
+      "category": "Languages",
+      "items": ["TypeScript", "JavaScript", "C#", "SQL", "PHP", "HTML", "CSS"]
     },
     {
-      "category": "Backend",
-      "items": ["NodeJS", "TypeScript", "C#", "AdonisJS", ".NET Framework", "SQL Server"]
+      "category": "Frameworks",
+      "items": ["Node.js", "AdonisJS", "React", ".NET Framework"]
     },
     {
-      "category": "Tools & Technologies",
-      "items": ["Unity", "Machine Learning", "Selenium IDE", "Crystal Reports", "SSRS"]
+      "category": "Data & Reporting",
+      "items": ["SQL Server", "Crystal Reports", "SSRS"]
+    },
+    {
+      "category": "Testing & Tools",
+      "items": ["Vitest", "Selenium IDE", "Git", "GitHub Actions", "Vite", "Unity"]
     }
   ],
   "projects": [
     {
       "name": "Cardfight!! Vanguard Simulator",
-      "tag": "Passion project",
+      "tag": "Private repository",
       "tech": ["TypeScript", "React", "Vite", "Vitest"],
       "highlights": [
         "Building a fan-made, fully automated browser version of the card game, with a rules engine that resolves every phase, check, trigger and guard",
@@ -79,9 +96,9 @@
     },
     {
       "name": "Road Crack Detection System",
-      "tech": ["Machine Learning", "DCNN"],
+      "tech": ["Machine Learning", "Deep Convolutional Neural Network (DCNN)"],
       "highlights": [
-        "Developed an application that detects road cracks and potholes with 70-90% accuracy using a Deep Convolutional Neural Network (DCNN)",
+        "Trained a DCNN on 1,000+ road images to detect cracks and potholes, reaching 70-90% accuracy",
         "Enabled drone-based road inspections, saving civil engineers time checking roads"
       ]
     },
@@ -89,20 +106,18 @@
       "name": "Horror Soccer Game",
       "tech": ["Unity"],
       "highlights": [
-        "Implemented physics for ball movement and player interactions",
-        "Added basic animation systems",
-        "Led team project, assigning tasks by individual strengths"
+        "Led a team of 4 and implemented ball physics, player interactions and basic animation systems"
       ]
     }
   ],
   "education": [
     {
-      "degree": "Bachelor in Computer Science (Computer Graphic & Multimedia Software)",
+      "degree": "Bachelor of Computer Science (Computer Graphics and Multimedia Software)",
       "school": "Universiti Teknologi Malaysia",
+      "location": "Skudai, Johor, Malaysia",
       "start": "September 2019",
       "end": "September 2023",
-      "gpa": "3.32"
+      "grade": "CGPA 3.32 / 4.00"
     }
-  ],
-  "references": "Available on request"
+  ]
 }

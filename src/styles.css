@@ -122,16 +122,6 @@ h3 {
   gap: 0 16px;
 }
 
-.org {
-  font-weight: 400;
-  color: var(--body);
-}
-
-.org::before {
-  content: "· ";
-  color: var(--border);
-}
-
 .tag {
   margin-left: 6px;
   padding: 1px 7px;
